@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Tarea de Git</h1>
+    <h1>Sobre Mí</h1>
+    <h2>Introducción</h2>
+    <p>Mi nombre es Jader y esta es introducción sobre mí.</p>
+    <p>Me gusta la tecnología, aprender y adquirir nuevos conocimientos cada día.</p>
+    
+
+    <h2>Redes Sociales:</h2>
+    <address>
+          <p>Contactame por:<p>
+          <a href="https://www.facebook.com/jader.gutierrez.378/">
+             <img src="https://cdn.pixabay.com/photo/2021/06/15/12/51/twitter-6338509_1280.png" style="width: 24px; height: 24px;">
+             Facebook
+          </a>
+          <br>
+          <a href="https://www.instagram.com/jader_gutierrez1/">
+             <img src="https://static-00.iconduck.com/assets.00/instagram-icon-1024x1024-8qt57uwd.png" style="width: 24px; height: 24px;">
+             Instagram
+          </a>
+      </address>
+      
+    <h2>Mis Pasatiempos</h2>
+    <ul>
+        <li>Jugar Futbol</li>
+        <li>Escuchar música</li>
+        <li>Programar</li>
+    </ul>
+
+    <h2>Actividades Pendientes</h2>
+    <ol>
+        <li>Estudiar Programación</li>
+        <li>Hacer ejercicio</li>
+        <li>Hacer Oficio</li>
+    </ol>
+
+    <h2>Horario Semanal</h2>
+    <table border="2px">
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Actividad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>Estudiar programación</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>Hacer ejercicio</td>
+            </tr>
+            <tr>
+                <td>Miercoles</td>
+                <td>Hacer Oficio</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>Hacer ejercicio</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>Estudiar programación</td>
+            </tr>
+            <tr>
+                <td>Sabado</td>
+                <td>Hacer ejercicio</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>Hacer Oficio</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" name="Nombre" id="Nombre" required minlength="2">
+            <br><br>
+            <label for="ape">Apellido:</label>
+            <input type="text" name="ape" id="ape" required minlength="2">
+            <br><br>
+            <label for="Numero">Telefono:</label>
+            <input type="text" name="Numero" id="Numero" required pattern="[0-9]{10}" required maxlength="10">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información de Cuenta</legend>
+            <label for="Usur">Usuario:</label>
+            <input type="text" name="Usur" id="Usur">
+            <br><br>
+            <label for="contr">Contraseña:</label>
+            <input type="password" name="contr" id="contr" required minlength="2">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Información Adicional</legend>
+            <label for="Em">Correo Electrónico:</label>
+            <input type="email" name="Em" id="Em" required>
+            <br><br>
+            <label for="Fecha">Fecha de Nacimiento:</label>
+            <input type="date" name="Fecha" id="Fecha">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Sexo</legend>
+            <label for="Masculino">Masculino</label>
+            <input type="checkbox" name="sexo" id="Masculino">
+            <label for="Femenino">Femenino</label>
+            <input type="checkbox" name="sexo" id="Femenino">
+            <label for="Otro">Otro</label>
+            <input type="checkbox" name="sexo" id="Otro">
+        </fieldset>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
